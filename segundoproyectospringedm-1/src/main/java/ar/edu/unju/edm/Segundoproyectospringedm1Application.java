@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import ar.edu.unju.edm.controler.CalculadoraControler;
+import ar.edu.unju.edm.controler.CuentaController;
 
 @SpringBootApplication
 public class Segundoproyectospringedm1Application {
@@ -13,6 +14,9 @@ public class Segundoproyectospringedm1Application {
 		
 		CalculadoraControler nuevoControlador = new CalculadoraControler();
 		nuevoControlador.resolverSuma();
+		
+		CuentaController cuenta = new CuentaController();
+		cuenta.operarConCuenta();
 	}
 
 }
